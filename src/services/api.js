@@ -1,5 +1,5 @@
 import axios from 'axios';
 const api = axios.create({
-    baseURL: process.env.REAC_APP_API_URL,
+    baseURL: 'https://ssapifrs.herokuapp.com',
 })
 export default api;
