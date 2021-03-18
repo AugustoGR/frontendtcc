@@ -1,0 +1,139 @@
+.maincontainer{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.list-container{
+    width: 100vW;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(90% - 175px);
+    margin: 5px auto 0;
+}
+.shadow{
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1000px;
+    height: 98%;
+    border: 2px solid #F2F2F2;
+    border-radius: 28px;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.list{
+    margin: 0 auto;
+    width: 96%;
+    height: 100%;
+    overflow:auto;
+}
+#options{
+    display: flex;
+    margin-left: auto;
+    font-size: 12px;
+    margin-top: auto;
+    margin-right: 15%;
+}
+#more{
+    width: 30px;
+    height: 30px;
+}
+#useritens{
+    margin-top: 12px;
+    display: flex;
+    width: 150px;
+}
+#minhasub{   
+    height: 25px;
+    width: 100px;
+    margin-left: 15px;
+}
+.dados{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    flex-grow: 1;
+    margin: 2px;
+}
+.subsmodel{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid;
+    border-color: #E8E8E8;
+    border-radius: 20px;
+    width: 96%;
+    height: 60px;
+    margin: 4px 2%;
+    background: #FFFFFF;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.subsmodel:hover{
+    background: #dbdbdb;
+    border-color: #dbdbdb;
+    transition: 0.3s;
+}
+.photo{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0);
+    width: 56px;
+    height: 56px;
+    margin: auto 2px;
+    border-radius: 100%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#fichabutton{
+    text-decoration: none;
+}
+#id{
+    justify-self: right;
+    margin-right: 10px;
+}
+#filtra{
+    border-bottom: solid 2px;
+    border-color: gray;
+    margin-top: 10px;  
+    margin-right: 15px;
+}
+#filtertext{
+    margin-top: 3px;
+    width: 90%;
+    background: transparent;
+    border: none;
+    height: 24px;
+    font-size: 15px;
+    color:gray;
+}
+#lupa{
+width: 9%;
+float: right;
+}
+
+.valor{
+    font: 400 15px Roboto, sans-serif;
+}
+::-webkit-scrollbar{
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background: #008000;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track{
+    height: 100px;
+}
+#more:hover {
+    filter: brightness(80%);
+}
+
+@media screen and (max-width:800px){
+    .subsmodel{
+        height: 100px;
+    }
+    #filtertext{
+        width: 90px;
+    }
+}

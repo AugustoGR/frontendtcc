@@ -1,0 +1,74 @@
+.form-container{
+    width: 100vw;
+    display: flex;
+}
+.form-sub{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-content: center;
+    justify-content:space-evenly;
+}
+#input-turma{
+    width: 80px;
+}
+#input-data{
+    width: 130px;
+}
+#input-hora{
+    width: 72px;
+}
+.inp{
+    padding:0px 0;
+}
+.inpsub{
+    font-size: 14px;
+    color: rgb(151, 150, 150);
+    width: 350px;
+}
+#novamat{
+    display: none;
+}
+#ask{
+    display: none;
+}
+#obs{
+    border: solid 2px;
+    width: 100%;
+    height: 70px;
+    align-items: initial;
+    padding-top: 0px;
+}
+#obsl{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+@media screen and (max-width:800px){
+    .form-sub{
+        grid-template-columns: repeat(2, 1fr);
+        width: 90%;
+    } 
+    .inpsub{
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .form-sub{
+        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+    } 
+    .inpsub{
+        width: 300px;
+    }
+    #obsl{
+        grid-column-end: 2;
+    }
+    #input-hora{
+        width: 50px;
+    }
+
+}
