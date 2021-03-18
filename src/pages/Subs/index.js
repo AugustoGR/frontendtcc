@@ -64,7 +64,7 @@ export default function Subs(){
                 <div className="shadow">
                     <div className="list">
                         {
-                        subList.reverse().map(sub =>{
+                        /*subList.reverse().map(sub =>{
                                     var testlist = false;
                                     var status = sub.status;
                                     if(sub.status === 'Agendado' || sub.status === 'Requerido'){
@@ -98,7 +98,7 @@ export default function Subs(){
                                             )
                                         }
                                     }
-                        })
+                        })*/
                         }
                     </div>
                 </div>
