@@ -25,9 +25,10 @@ export default function Subs(){
     }
 
     useEffect(()=>{
-        api.get('substituicoes').then(response => {
-        setSubList(response.data);
-        console.log(response.data);
+        api.get('substituicoes').then(resp => {
+        setSubList(resp.data);
+        console.log(resp.data);
+        console.log(process.env.REAC_APP_API_URL);
     })
     },[subList]);
 
