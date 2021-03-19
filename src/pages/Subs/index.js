@@ -17,9 +17,8 @@ export default function Subs(){
 
     function tratadata(date){
         var data = new Date(date);
-        var d =data.getDate().toString();
+        var d =(data.getDate()+1).toString();
         var m =(data.getMonth()+1).toString();
-        dia++;
         var dia = (d.length === 1) ? '0'+d:d;
         var mes = (m.length === 1) ? '0'+m:m;
         return(dia+'/'+mes+'/'+data.getFullYear());
