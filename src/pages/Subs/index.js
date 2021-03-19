@@ -82,6 +82,7 @@ export default function Subs(){
                                     if(testlist){
                                         if(filtro == sub.id || filtro == "" || filtro .toLowerCase() == sub.turma.toLowerCase() || filtro.toLowerCase() == sub.nome.toLowerCase()){
                                             var string = "/detalhessub?id="+sub.id; 
+                                            console.log(sub.data);
                                             return(
                                                 <Link id="fichabutton" to={string} key={sub.id}>
                                                     <div className="subsmodel">
