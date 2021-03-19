@@ -40,7 +40,7 @@ export default function CallBack(){
         const data = {
             client_id: "aYixWK878H_tE1UucaeT",
             grant_type: "authorization_code",
-            redirect_uri: "https://localhost:3000/cb",
+            redirect_uri: "https://ssapifrscanoas.herokuapp.com/cb",
             code: query.get('code'),
             code_verifier: 'mLIxnsYmEa3DM6~wa5pYAFQdCn3IhYlhz3SAEon.Bt5YMfr13Da_6DUR_YeIe6MgmKfOaNGpwmIW.D65yxn_5gmCYBbQEZbEEGY_LPMhUWltE34-70BGbSskoC8xEXDF'
         };
