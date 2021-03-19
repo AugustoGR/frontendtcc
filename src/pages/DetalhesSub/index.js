@@ -78,6 +78,7 @@ export default function DetSub(){
         var d =data.getDate().toString();
         var m =(data.getMonth()+1).toString();
         var dia = (d.length === 1) ? '0'+d:d;
+        dia++;
         var mes = (m.length === 1) ? '0'+m:m;
         return(dia+'/'+mes+'/'+data.getFullYear());
     }

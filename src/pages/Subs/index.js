@@ -16,11 +16,11 @@ export default function Subs(){
     const [selecionado, setSelecionado] = useState("Minhas Subs");
 
     function tratadata(date){
-        console.log(date);
         var data = new Date(date);
         var d =data.getDate().toString();
         var m =(data.getMonth()+1).toString();
         var dia = (d.length === 1) ? '0'+d:d;
+        dia++;
         var mes = (m.length === 1) ? '0'+m:m;
         return(dia+'/'+mes+'/'+data.getFullYear());
     }
@@ -82,8 +82,7 @@ export default function Subs(){
                                     }
                                     if(testlist){
                                         if(filtro == sub.id || filtro == "" || filtro .toLowerCase() == sub.turma.toLowerCase() || filtro.toLowerCase() == sub.nome.toLowerCase()){
-                                            var string = "/detalhessub?id="+sub.id; 
-                                            console.log(sub.data);
+                                            var string = "/detalhessub?id="+sub.id;
                                             return(
                                                 <Link id="fichabutton" to={string} key={sub.id}>
                                                     <div className="subsmodel">
