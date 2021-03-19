@@ -30,7 +30,6 @@ export default function Header(){
     function logout(){
         const logout_redirect = `https://ssapifrscanoas.herokuapp.com/logout`;
         window.location = `https://demo-openidc.canoas.ifrs.edu.br/session/end?id_token_hint=${localStorage.getItem('id_token')}&post_logout_redirect_uri=${logout_redirect}`;
-        localStorage.clear();
         history.push('/');
     }
 

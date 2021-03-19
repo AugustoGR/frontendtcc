@@ -49,7 +49,7 @@ export default function CriaSub(){
         if(prof!=null&&turma!=null&&horario!=null&&horariofim!=null&&profsub!=null&&mat!=null&&data!=null&&emailSub!=null){
         try{ 
             const response = await api.post('substituicoes',dados);
-            alert(response.data.id);
+            alert(response.data.idf);
             valid = true;
         }
         catch(err){
