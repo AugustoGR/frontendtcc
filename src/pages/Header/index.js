@@ -15,7 +15,7 @@ export default function Header(){
     var hash = crypto.createHash('sha256').update(code_verifier).digest();
     var code_challenge = base64url.encode(hash);
 
-    var url = "https://demo-openidc.canoas.ifrs.edu.br/auth?client_id=aYixWK878H_tE1UucaeT&response_type=code&scope=openid profile email&state=au2001&code_challenge_method=S256&code_challenge="+code_challenge+"&redirect_uri=https://localhost:3000/cb"
+    var url = "https://demo-openidc.canoas.ifrs.edu.br/auth?client_id=gPibW6Y7KhF4E1jua16m&response_type=code&scope=openid profile email&state=au2001&code_challenge_method=S256&code_challenge="+code_challenge+"&redirect_uri=https://ssapifrscanoas.herokuapp.com/cb"
     function login(){
         if(localStorage.getItem('access_token')){
             return (
