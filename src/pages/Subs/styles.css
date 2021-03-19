@@ -131,7 +131,7 @@ float: right;
 
 @media screen and (max-width:800px){
     .subsmodel{
-        height: 100px;
+        height: 130px;
     }
     #filtertext{
         width: 90px;
