@@ -16,6 +16,7 @@ export default function Subs(){
     const [selecionado, setSelecionado] = useState("Minhas Subs");
 
     function tratadata(date){
+        console.log(date);
         var data = new Date(date);
         var d =data.getDate().toString();
         var m =(data.getMonth()+1).toString();
