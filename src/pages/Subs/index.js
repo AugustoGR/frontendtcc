@@ -76,7 +76,7 @@ export default function Subs(){
                                     if(lista === "minhas" && sub.email == localStorage.getItem('email')){
                                         testlist = true;
                                     }
-                                    else if(sub.status != 'Requerido'){
+                                    else if(sub.status != 'Requerido' && lista === "todas"){
                                         testlist = true;
                                     }
                                     if(testlist){

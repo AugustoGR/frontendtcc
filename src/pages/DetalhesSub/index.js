@@ -57,9 +57,7 @@ export default function DetSub(){
         }}
         setStatus(nstatus);
         setId(email);
-        console.log(status);
-        console.log(email);
-        console.log(profidlog);
+
         if(profidlog == email && status != 'Cancelada'){
             var botao = document.getElementById('cancela')
             botao.style.display = 'inline-block';
