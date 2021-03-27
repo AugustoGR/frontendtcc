@@ -73,14 +73,9 @@ export default function DetSub(){
     }
 
     function tratadata(date){
-        var data = new Date(date).toLocaleDateString('pt-BR', {timeZone: 'UTC'});;
-        var d =(data.getDate()).toString();
-        var m =(data.getMonth()+1).toString();
-        var dia = (d.length === 1) ? '0'+d:d;
-        var mes = (m.length === 1) ? '0'+m:m;
-        return(dia+'/'+mes+'/'+data.getFullYear());
+        var data = new Date(date);
+        return(data.toLocaleDateString('pt-BR', {timeZone: 'UTC'}));
     }
-
     
     return(
         <div className="novasub-container">

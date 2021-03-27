@@ -17,11 +17,7 @@ export default function Subs(){
 
     function tratadata(date){
         var data = new Date(date);
-        var d =(data.getDate()).toString();
-        var m =(data.getMonth()+1).toString();
-        var dia = (d.length === 1) ? '0'+d:d;
-        var mes = (m.length === 1) ? '0'+m:m;
-        return(dia+'/'+mes+'/'+data.getFullYear());
+        return(data.toLocaleDateString('pt-BR', {timeZone: 'UTC'}));
     }
 
     useEffect(()=>{
@@ -69,7 +65,7 @@ export default function Subs(){
                                     var status = sub.status;
                                     if(sub.status === 'Agendado' || sub.status === 'Requerido'){
                                     const dataagora = new Date();
-                                    const dataagen = new Date(sub.data).toLocaleDateString('pt-BR', {timeZone: 'UTC'});
+                                    const dataagen = new Date(sub.data);
                                     if(dataagora.getTime() - 86400000>dataagen.getTime()){
                                     status = "Expirou";
                                     }}
