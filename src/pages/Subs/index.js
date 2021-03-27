@@ -69,7 +69,7 @@ export default function Subs(){
                                     var status = sub.status;
                                     if(sub.status === 'Agendado' || sub.status === 'Requerido'){
                                     const dataagora = new Date();
-                                    const dataagen = new Date(sub.data).toLocaleDateString('pt-BR', {timeZone: 'UTC'});;
+                                    const dataagen = new Date(sub.data).toLocaleDateString('pt-BR', {timeZone: 'UTC'});
                                     if(dataagora.getTime() - 86400000>dataagen.getTime()){
                                     status = "Expirou";
                                     }}
