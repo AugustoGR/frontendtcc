@@ -17,6 +17,7 @@ export default function Subs(){
 
     function tratadata(date){
         var data = new Date(date);
+        console.log(data.toLocaleDateString('pt-BR', {timeZone: 'UTC'}));
         var d =(data.getDate()+1).toString();
         var m =(data.getMonth()+1).toString();
         var dia = (d.length === 1) ? '0'+d:d;
