@@ -12,9 +12,14 @@ export default function Confirma(){
     }
 
     useEffect(()=>{
+        try{
         api.post('confirmacao/'+query.get("id"));
         alert("Confirmação feita com sucesso");
         window.close();
+        }
+        catch(err){
+            alert("Erro, tente novamente");
+        }
     },[]);
 
     return(
