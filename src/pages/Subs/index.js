@@ -17,7 +17,7 @@ export default function Subs(){
 
     function tratadata(date){
         var data = new Date(date);
-        var d =(data.getDate()+1).toString();
+        var d =(data.getDate()).toString();
         var m =(data.getMonth()+1).toString();
         var dia = (d.length === 1) ? '0'+d:d;
         var mes = (m.length === 1) ? '0'+m:m;
@@ -69,7 +69,7 @@ export default function Subs(){
                                     var status = sub.status;
                                     if(sub.status === 'Agendado' || sub.status === 'Requerido'){
                                     const dataagora = new Date();
-                                    const dataagen = new Date(sub.data);
+                                    const dataagen = new Date(sub.data).toLocaleDateString('pt-BR', {timeZone: 'UTC'});;
                                     if(dataagora.getTime() - 86400000>dataagen.getTime()){
                                     status = "Expirou";
                                     }}
