@@ -13,9 +13,10 @@ export default function Confirma(){
 
     useEffect(async ()=> {
         try{
-        const result = await api.post('confirmacao/'+query.get("id"));
-        alert("Confirmação feita com sucesso");
-        window.close();
+        const result = await api.post('confirmacao/'+query.get("id")).then(() => {
+            alert("Confirmação feita com sucesso");
+            window.close();
+        });
         }
         catch(err){
             alert("Erro, tente novamente");
@@ -25,7 +26,7 @@ export default function Confirma(){
     return(
         <div id="confbody">
             <div id="divtxt">
-                <h4>Confirmação feita com sucesso</h4>
+                <h4>Confirmação em andamento</h4>
             </div>
         </div>
     )
