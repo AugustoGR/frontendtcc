@@ -11,9 +11,9 @@ export default function Confirma(){
         return new URLSearchParams(useLocation().search);
     }
 
-    useEffect(()=>{
+    useEffect(async ()=> {
         try{
-        api.post('confirmacao/'+query.get("id"));
+        const result = await api.post('confirmacao/'+query.get("id"));
         alert("Confirmação feita com sucesso");
         window.close();
         }
